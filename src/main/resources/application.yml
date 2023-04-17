@@ -1,4 +1,6 @@
 management:
+  server:
+    port: 8080
   info:
     java:
       enabled: true
@@ -8,15 +10,15 @@ management:
       enabled: true
     git:
       mode: "full"
-#  endpoint:
-#    shutdown:
-#    enabled: true
   endpoint:
+    shutdown:
+      enabled: true
     health:
       show-details: always
-#      show-components: always
+      show-components: always
   endpoints:
     web:
+      base-path: "/manage"
       exposure:
         include: "*"
 #        include: "health,info"
