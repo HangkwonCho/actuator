@@ -18,7 +18,7 @@ management:
       show-components: always
   endpoints:
     web:
-      base-path: "/manage"
+#      base-path: "/manage"
       exposure:
         include: "*"
 #        include: "health,info"
